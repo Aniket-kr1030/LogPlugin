@@ -14,28 +14,6 @@ using Serilog.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//New Code
-// Log.Logger = new LoggerConfiguration()
-//     .WriteTo.File("Logs/logs.txt", rollingInterval: RollingInterval.Day)
-//     .CreateLogger();
-// try
-// {
-//     Log.Information("Starting up");
-//     WebApplication.CreateBuilder(args);
-// }
-// catch (Exception ex)
-// {
-//     Log.Fatal(ex, "Application start-up failed");
-// }
-// finally
-// {
-//     Log.CloseAndFlush();
-// }
-
-
-
-
-
 
 // Add services to the container.
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
