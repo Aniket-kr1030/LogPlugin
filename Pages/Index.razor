@@ -1,0 +1,178 @@
+﻿@page "/"
+@using LoggerPlugin.Data
+@using LoggerPlugin.Models
+@using Microsoft.EntityFrameworkCore
+@inject ApplicationDbContext _context
+
+
+<h1>Log Viewer</h1>
+
+<label for="logLevel">Filter by log level:</label>
+<select @bind="_selectedLogLevel" id="logLevel">
+    <option value="">All</option>
+    @foreach (var level in _logLevels)
+    {
+            <option value="@level">@level</option>
+    }
+</select>
+
+<label for="user">Filter by user:</label>
+<input type="text" @bind="_selectedUser" id="user">
+
+
+<button @onclick="ApplyFilter">Apply Filter</button>
+
+@if (_logEvents == null)
+{
+        <p><em>Loading...</em></p>
+}
+else if (_logEvents.Count == 0)
+{
+        <p><em>No logs found.</em></p>
+}
+else
+{
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Timestamp</th>
+                    <th>Level</th>
+                    <th>User Information</th>
+                    <th>System Information</th>
+                    <th>Process Information</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var logEvent in _logEvents.Skip((_currentPage - 1) * _pageSize).Take(_pageSize))
+            {
+                if (String.IsNullOrEmpty(_selectedLogLevel) && String.IsNullOrEmpty(_selectedUser))
+                {
+                    <tr>
+                                        <td>@logEvent.Timestamp</td>
+                                        <td>@logEvent.Level</td>
+                                        <td>@logEvent.UserInformation</td>
+                                        <td>@logEvent.SystemInformation</td>
+                                        <td>@logEvent.ProcessInformation</td>
+                                        <td>@logEvent.Message</td>
+                    </tr>
+                }
+                else if (!String.IsNullOrEmpty(_selectedLogLevel) && String.IsNullOrEmpty(_selectedUser))
+                {
+                    if(logEvent.Level == _selectedLogLevel)
+                    {
+                                                                     <tr>
+                                                                    <td>@logEvent.Timestamp</td>
+                                                                    <td>@logEvent.Level</td>
+                                                                    <td>@logEvent.UserInformation</td>
+                                                                    <td>@logEvent.SystemInformation</td>
+                                                                    <td>@logEvent.ProcessInformation</td>
+                                                                    <td>@logEvent.Message</td>
+                                                                     </tr>
+                    }
+                }
+                else if (String.IsNullOrEmpty(_selectedLogLevel) && !String.IsNullOrEmpty(_selectedUser))
+                {
+                    if (logEvent.UserInformation == _selectedUser)
+                    {
+                                                        <tr>
+                                                        <td>@logEvent.Timestamp</td>
+                                                        <td>@logEvent.Level</td>
+                                                        <td>@logEvent.UserInformation</td>
+                                                        <td>@logEvent.SystemInformation</td>
+                                                        <td>@logEvent.ProcessInformation</td>
+                                                        <td>@logEvent.Message</td>
+                                                        </tr>
+                      
+                    }
+                }
+                else
+                {
+                    if (logEvent.UserInformation == _selectedUser && logEvent.Level == _selectedLogLevel)
+                    {
+                                        <tr>
+                                        <td>@logEvent.Timestamp</td>
+                                        <td>@logEvent.Level</td>
+                                        <td>@logEvent.UserInformation</td>
+                                        <td>@logEvent.SystemInformation</td>
+                                        <td>@logEvent.ProcessInformation</td>
+                                        <td>@logEvent.Message</td>
+                                        </tr>
+                    }
+                }
+
+            }
+            </tbody>
+        </table>
+        <center>
+        <p>
+            Page @_currentPage of @_totalPages
+            <button class="btn btn-secondary" @onclick="PreviousPage" disabled="@(_currentPage == 1)">Previous</button>
+            <button class="btn btn-secondary" @onclick="NextPage" disabled="@(_currentPage == _totalPages)">Next</button>
+        </p>
+            </center>
+}
+
+@code {
+    private List<LogEvent>? _logEvents;
+    private int _currentPage = 1;
+    private int _pageSize = 10;
+    private int _totalPages;
+    private string? _selectedLogLevel;
+    private string? _selectedUser;
+
+
+    private string[] _logLevels = new[] { "Information", "Debug", "Warning", "Error", "Critical" , "None", "Trace" };
+
+    protected override async Task OnInitializedAsync()
+    {
+        await InitialList();
+    }
+
+    public void ApplyFilter(){
+        Console.WriteLine("Filter Applied");
+        StateHasChanged();
+    }
+
+    private async Task InitialList()
+    {
+        try
+        {
+            if (string.IsNullOrEmpty(_selectedLogLevel))
+            {
+                _logEvents = await _context.LogEvents.OrderByDescending(x => x.Timestamp).ToListAsync();
+            }
+            else
+            {
+                _logEvents = await _context.LogEvents
+                    .Where(x => x.Level == _selectedLogLevel)
+                    .OrderByDescending(x => x.Timestamp)
+                    .ToListAsync();
+            }
+            _currentPage = 1;
+            _totalPages = (_logEvents.Count + _pageSize - 1) / _pageSize;
+        }
+        catch (Exception ex)
+        {
+           
+            Console.Error.WriteLine(ex.ToString());
+            _logEvents = new List<LogEvent>();
+        }
+    }
+
+    private void PreviousPage()
+    {
+        if (_currentPage > 1)
+        {
+            _currentPage--;
+        }
+    }
+
+    private void NextPage()
+    {
+        if (_currentPage < _totalPages)
+        {
+            _currentPage++;
+        }
+    }
+}
