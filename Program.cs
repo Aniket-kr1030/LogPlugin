@@ -6,29 +6,34 @@ using Microsoft.EntityFrameworkCore;
 using LoggerPlugin.Middleware;
 using LoggerPlugin.Data;
 using Serilog;
-using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Hosting;
+using Serilog.Events;
+using Serilog.Sinks.File;
+using Serilog.Extensions.Hosting;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
 //New Code
-Log.Logger = new LoggerConfiguration()
-    .WriteTo.File("Logs/logs.txt", rollingInterval: RollingInterval.Day)
-    .CreateLogger();
+// Log.Logger = new LoggerConfiguration()
+//     .WriteTo.File("Logs/logs.txt", rollingInterval: RollingInterval.Day)
+//     .CreateLogger();
+// try
+// {
+//     Log.Information("Starting up");
+//     WebApplication.CreateBuilder(args);
+// }
+// catch (Exception ex)
+// {
+//     Log.Fatal(ex, "Application start-up failed");
+// }
+// finally
+// {
+//     Log.CloseAndFlush();
+// }
 
-try
-{
-    Log.Information("Starting up");
-    WebApplication.CreateBuilder(args);
-}
-catch (Exception ex)
-{
-    Log.Fatal(ex, "Application start-up failed");
-}
-finally
-{
-    Log.CloseAndFlush();
-}
+
+
 
 
 
@@ -52,12 +57,26 @@ builder.Services.AddControllers();
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
+    .Enrich.FromLogContext()
+    .WriteTo.Console()
+    .WriteTo.File("Logs/logs.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 
 app.UseExceptionHandler("/Error");
 app.UseHsts();
+
+//Serilog
+
+
 
 
 app.UseHttpsRedirection();
@@ -79,4 +98,16 @@ app.UseEndpoints(endpoints =>
     endpoints.MapRazorPages();
 });
 
-app.Run();
+try
+{
+    Log.Information("Starting up");
+    app.Run();
+}
+catch (Exception ex)
+{
+    Log.Fatal(ex, "Application start-up failed");
+}
+finally
+{
+    Log.CloseAndFlush();
+}

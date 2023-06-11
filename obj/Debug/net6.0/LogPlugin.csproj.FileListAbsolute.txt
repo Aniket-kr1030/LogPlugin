@@ -166,3 +166,8 @@ C:\Users\anike\OneDrive\Documents\GitHub\LogPlugin\obj\Debug\net6.0\refint\LogPl
 C:\Users\anike\OneDrive\Documents\GitHub\LogPlugin\obj\Debug\net6.0\LogPlugin.pdb
 C:\Users\anike\OneDrive\Documents\GitHub\LogPlugin\obj\Debug\net6.0\LogPlugin.genruntimeconfig.cache
 C:\Users\anike\OneDrive\Documents\GitHub\LogPlugin\obj\Debug\net6.0\ref\LogPlugin.dll
+C:\Users\anike\OneDrive\Documents\GitHub\LogPlugin\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\anike\OneDrive\Documents\GitHub\LogPlugin\bin\Debug\net6.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\anike\OneDrive\Documents\GitHub\LogPlugin\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+C:\Users\anike\OneDrive\Documents\GitHub\LogPlugin\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+C:\Users\anike\OneDrive\Documents\GitHub\LogPlugin\bin\Debug\net6.0\Serilog.Sinks.Console.dll
