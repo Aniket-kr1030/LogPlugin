@@ -50,43 +50,6 @@
         }
       },
       {
-        "HashCode": 1654173982,
-        "Kind": "Components.Component",
-        "Name": "LogPlugin.Pages.FetchData",
-        "AssemblyName": "LogPlugin",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "LogPlugin.Pages.FetchData",
-          "Common.TypeNameIdentifier": "FetchData",
-          "Common.TypeNamespace": "LogPlugin.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1216942280,
-        "Kind": "Components.Component",
-        "Name": "LogPlugin.Pages.FetchData",
-        "AssemblyName": "LogPlugin",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "LogPlugin.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "LogPlugin.Pages.FetchData",
-          "Common.TypeNameIdentifier": "FetchData",
-          "Common.TypeNamespace": "LogPlugin.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": 1271934664,
         "Kind": "Components.Component",
         "Name": "LogPlugin.Pages.Index",
@@ -118,6 +81,43 @@
         "Metadata": {
           "Common.TypeName": "LogPlugin.Pages.Index",
           "Common.TypeNameIdentifier": "Index",
+          "Common.TypeNamespace": "LogPlugin.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1654173982,
+        "Kind": "Components.Component",
+        "Name": "LogPlugin.Pages.FetchData",
+        "AssemblyName": "LogPlugin",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "LogPlugin.Pages.FetchData",
+          "Common.TypeNameIdentifier": "FetchData",
+          "Common.TypeNamespace": "LogPlugin.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1216942280,
+        "Kind": "Components.Component",
+        "Name": "LogPlugin.Pages.FetchData",
+        "AssemblyName": "LogPlugin",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "LogPlugin.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "LogPlugin.Pages.FetchData",
+          "Common.TypeNameIdentifier": "FetchData",
           "Common.TypeNamespace": "LogPlugin.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"

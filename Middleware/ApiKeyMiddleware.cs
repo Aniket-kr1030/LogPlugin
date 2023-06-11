@@ -26,14 +26,12 @@ namespace LoggerPlugin.Middleware
                     context.Response.StatusCode = 401;
                     Console.WriteLine(context.Request.Path.ToString());
                     await context.Response.WriteAsync("API Key was not provided. (Header name: 'X-API-KEY')");
-                    return;
                 }
 
                 else if (receivedApiKey != _apiKey)
                 {
                     context.Response.StatusCode = 401;
                     await context.Response.WriteAsync("Invalid API Key.");
-                    return;
                 }
 
                 else
