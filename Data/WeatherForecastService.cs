@@ -1,5 +1,8 @@
+using System.Diagnostics.CodeAnalysis;
+
 namespace LogPlugin.Data
 {
+    [ExcludeFromCodeCoverage]
     public class WeatherForecastService
     {
         private static readonly string[] Summaries = new[]

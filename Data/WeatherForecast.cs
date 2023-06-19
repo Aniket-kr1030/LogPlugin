@@ -1,5 +1,9 @@
+using System.Diagnostics.CodeAnalysis;
+
+
 namespace LogPlugin.Data
 {
+    [ExcludeFromCodeCoverage]
     public class WeatherForecast
     {
         public DateTime Date { get; set; }

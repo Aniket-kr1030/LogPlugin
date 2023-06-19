@@ -10,7 +10,9 @@ using Microsoft.Extensions.Hosting;
 using Serilog.Events;
 using Serilog.Sinks.File;
 using Serilog.Extensions.Hosting;
-
+using System.Diagnostics.CodeAnalysis;
+using Hangfire;
+using LogPlugin.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,10 +33,14 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
     };
 });
 
+builder.Services.AddHangfire(configuration => configuration
+ .UseSqlServerStorage(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddHangfireServer();
+
 builder.Services.AddControllers();
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-
+builder.Services.AddTransient<DatabaseMaintenanceService>();
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
     .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
@@ -52,7 +58,9 @@ var app = builder.Build();
 app.UseExceptionHandler("/Error");
 app.UseHsts();
 
-//Serilog
+//Scheduler Service
+app.UseHangfireDashboard();
+app.UseHangfireServer();
 
 
 
@@ -75,6 +83,8 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllers();
     endpoints.MapRazorPages();
 });
+
+var scopeFactory = app.Services.GetRequiredService<IServiceScopeFactory>();
 
 try
 {

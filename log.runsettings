@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RunSettings>
+  <!-- Configure code coverage analysis -->
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector friendlyName="XPlat code coverage">
+        <Configuration>
+          <Format>opencover</Format>
+          <!-- [Optional] Exclude specific files and directories -->
+          <ExcludeByFile>
+             
+          </ExcludeByFile>
+          <!-- [Optional] Exclude specific attributes -->
+          <ExcludeByAttribute>
+            GeneratedCodeAttribute,CompilerGeneratedAttribute
+          </ExcludeByAttribute>
+          <Source>.*cshtml$</Source>
+          <Source>.*razor$</Source>
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings>

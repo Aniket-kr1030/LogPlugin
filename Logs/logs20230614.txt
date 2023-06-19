@@ -1,0 +1,116 @@
+2023-06-14 19:33:11.893 +05:30 [INF] Start installing Hangfire SQL objects...
+2023-06-14 19:33:14.368 +05:30 [INF] Hangfire SQL objects installed.
+2023-06-14 19:33:14.439 +05:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: KALKI@LoggerDB'
+2023-06-14 19:33:14.440 +05:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-14 19:33:14.441 +05:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-14 19:33:14.812 +05:30 [INF] Server kalki:19824:1de96b32 successfully announced in 346.6156 ms
+2023-06-14 19:33:14.819 +05:30 [INF] Server kalki:19824:1de96b32 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-14 19:33:15.033 +05:30 [INF] Server kalki:19824:1de96b32 all the dispatchers started
+2023-06-14 19:33:16.469 +05:30 [INF] Starting up
+2023-06-14 19:33:16.747 +05:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: KALKI@LoggerDB'
+2023-06-14 19:33:16.748 +05:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-14 19:33:16.749 +05:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-14 19:33:16.760 +05:30 [INF] Server kalki:19824:c432b92c successfully announced in 6.7835 ms
+2023-06-14 19:33:16.761 +05:30 [INF] Server kalki:19824:c432b92c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-14 19:33:16.887 +05:30 [INF] Server kalki:19824:c432b92c all the dispatchers started
+2023-06-14 19:33:35.364 +05:30 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2023-06-14 19:33:35.365 +05:30 [INF] Server kalki:19824:1de96b32 caught stopping signal...
+2023-06-14 19:33:35.412 +05:30 [INF] Server kalki:19824:1de96b32 caught stopped signal...
+2023-06-14 19:33:35.465 +05:30 [WRN] Server kalki:19824:1de96b32 caught shutdown signal...
+2023-06-14 19:33:35.466 +05:30 [INF] Server kalki:19824:1de96b32 All dispatchers stopped
+2023-06-14 19:33:35.494 +05:30 [INF] Server kalki:19824:1de96b32 successfully reported itself as stopped in 12.1468 ms
+2023-06-14 19:33:35.495 +05:30 [INF] Server kalki:19824:1de96b32 has been stopped in total 96.3951 ms
+2023-06-14 19:33:35.496 +05:30 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2023-06-14 19:33:35.497 +05:30 [INF] Server kalki:19824:c432b92c caught stopping signal...
+2023-06-14 19:33:35.500 +05:30 [INF] Server kalki:19824:c432b92c caught stopped signal...
+2023-06-14 19:33:35.511 +05:30 [WRN] Server kalki:19824:c432b92c caught shutdown signal...
+2023-06-14 19:33:35.523 +05:30 [INF] Server kalki:19824:c432b92c All dispatchers stopped
+2023-06-14 19:33:35.529 +05:30 [INF] Server kalki:19824:c432b92c successfully reported itself as stopped in 3.1847 ms
+2023-06-14 19:33:35.530 +05:30 [INF] Server kalki:19824:c432b92c has been stopped in total 29.3705 ms
+2023-06-14 19:34:00.930 +05:30 [INF] Start installing Hangfire SQL objects...
+2023-06-14 19:34:01.867 +05:30 [INF] Hangfire SQL objects installed.
+2023-06-14 19:34:01.958 +05:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: KALKI@LoggerDB'
+2023-06-14 19:34:01.960 +05:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-14 19:34:01.961 +05:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-14 19:34:02.271 +05:30 [INF] Server kalki:12220:eade8e53 successfully announced in 238.6524 ms
+2023-06-14 19:34:02.279 +05:30 [INF] Server kalki:12220:eade8e53 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-14 19:34:23.176 +05:30 [INF] Start installing Hangfire SQL objects...
+2023-06-14 19:34:23.990 +05:30 [INF] Hangfire SQL objects installed.
+2023-06-14 19:34:24.101 +05:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: KALKI@LoggerDB'
+2023-06-14 19:34:24.103 +05:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-14 19:34:24.104 +05:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-14 19:34:24.516 +05:30 [INF] Server kalki:18580:3a4073be successfully announced in 356.0733 ms
+2023-06-14 19:34:24.525 +05:30 [INF] Server kalki:18580:3a4073be is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-14 19:34:24.657 +05:30 [INF] Server kalki:18580:3a4073be all the dispatchers started
+2023-06-14 19:34:25.964 +05:30 [INF] Starting up
+2023-06-14 19:34:26.132 +05:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: KALKI@LoggerDB'
+2023-06-14 19:34:26.133 +05:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-14 19:34:26.134 +05:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-14 19:34:26.146 +05:30 [INF] Server kalki:18580:48b3057f successfully announced in 6.4772 ms
+2023-06-14 19:34:26.147 +05:30 [INF] Server kalki:18580:48b3057f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-14 19:34:26.264 +05:30 [INF] Server kalki:18580:48b3057f all the dispatchers started
+2023-06-14 19:34:33.338 +05:30 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2023-06-14 19:34:33.339 +05:30 [INF] Server kalki:18580:3a4073be caught stopping signal...
+2023-06-14 19:34:33.369 +05:30 [INF] Server kalki:18580:3a4073be caught stopped signal...
+2023-06-14 19:34:33.402 +05:30 [WRN] Server kalki:18580:3a4073be caught shutdown signal...
+2023-06-14 19:34:33.463 +05:30 [INF] Server kalki:18580:3a4073be All dispatchers stopped
+2023-06-14 19:34:33.474 +05:30 [INF] Server kalki:18580:3a4073be successfully reported itself as stopped in 3.8336 ms
+2023-06-14 19:34:33.475 +05:30 [INF] Server kalki:18580:3a4073be has been stopped in total 107.3365 ms
+2023-06-14 19:34:33.476 +05:30 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2023-06-14 19:34:33.477 +05:30 [INF] Server kalki:18580:48b3057f caught stopping signal...
+2023-06-14 19:34:33.487 +05:30 [INF] Server kalki:18580:48b3057f caught stopped signal...
+2023-06-14 19:34:33.489 +05:30 [INF] Server kalki:18580:48b3057f All dispatchers stopped
+2023-06-14 19:34:33.489 +05:30 [WRN] Server kalki:18580:48b3057f caught shutdown signal...
+2023-06-14 19:34:33.491 +05:30 [INF] Server kalki:18580:48b3057f successfully reported itself as stopped in 0.7372 ms
+2023-06-14 19:34:33.492 +05:30 [INF] Server kalki:18580:48b3057f has been stopped in total 5.4817 ms
+2023-06-14 19:35:08.755 +05:30 [INF] Start installing Hangfire SQL objects...
+2023-06-14 19:35:09.588 +05:30 [INF] Hangfire SQL objects installed.
+2023-06-14 19:35:09.668 +05:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: KALKI@LoggerDB'
+2023-06-14 19:35:09.670 +05:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-14 19:35:09.670 +05:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-14 19:35:09.953 +05:30 [INF] Starting up
+2023-06-14 19:35:09.981 +05:30 [INF] Server kalki:5948:cb6e00b6 successfully announced in 269.2995 ms
+2023-06-14 19:35:09.991 +05:30 [INF] Server kalki:5948:cb6e00b6 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-14 19:35:10.092 +05:30 [INF] Server kalki:5948:cb6e00b6 all the dispatchers started
+2023-06-14 19:35:10.236 +05:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: KALKI@LoggerDB'
+2023-06-14 19:35:10.236 +05:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-06-14 19:35:10.237 +05:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-14 19:35:10.247 +05:30 [INF] Server kalki:5948:8276ec7d successfully announced in 3.9826 ms
+2023-06-14 19:35:10.248 +05:30 [INF] Server kalki:5948:8276ec7d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-14 19:35:10.361 +05:30 [INF] Server kalki:5948:8276ec7d all the dispatchers started
+2023-06-14 19:35:28.267 +05:30 [INF] Server kalki:5948:cb6e00b6 caught stopping signal...
+2023-06-14 19:35:28.402 +05:30 [INF] Server kalki:5948:cb6e00b6 All dispatchers stopped
+2023-06-14 19:35:28.417 +05:30 [INF] Server kalki:5948:cb6e00b6 successfully reported itself as stopped in 6.7944 ms
+2023-06-14 19:35:28.418 +05:30 [INF] Server kalki:5948:cb6e00b6 has been stopped in total 72.0643 ms
+2023-06-14 19:35:28.426 +05:30 [INF] Server kalki:5948:8276ec7d caught stopping signal...
+2023-06-14 19:35:28.473 +05:30 [INF] Server kalki:5948:8276ec7d All dispatchers stopped
+2023-06-14 19:35:28.507 +05:30 [INF] Server kalki:5948:8276ec7d successfully reported itself as stopped in 26.6415 ms
+2023-06-14 19:35:28.508 +05:30 [INF] Server kalki:5948:8276ec7d has been stopped in total 44.9803 ms
