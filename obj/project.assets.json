@@ -696,6 +696,22 @@
           }
         }
       },
+      "Serilog.Formatting.Compact/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.8.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Formatting.Compact.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Formatting.Compact.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Serilog.Sinks.Console/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -2208,6 +2224,23 @@
         "serilog.extensions.logging.nuspec"
       ]
     },
+    "Serilog.Formatting.Compact/1.1.0": {
+      "sha512": "pNroKVjo+rDqlxNG5PXkRLpfSCuDOBY0ri6jp9PLe505ljqwhwZz8ospy2vWhQlFu5GkIesh3FcDs4n7sWZODA==",
+      "type": "package",
+      "path": "serilog.formatting.compact/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Serilog.Formatting.Compact.dll",
+        "lib/net452/Serilog.Formatting.Compact.xml",
+        "lib/netstandard1.1/Serilog.Formatting.Compact.dll",
+        "lib/netstandard1.1/Serilog.Formatting.Compact.xml",
+        "lib/netstandard2.0/Serilog.Formatting.Compact.dll",
+        "lib/netstandard2.0/Serilog.Formatting.Compact.xml",
+        "serilog.formatting.compact.1.1.0.nupkg.sha512",
+        "serilog.formatting.compact.nuspec"
+      ]
+    },
     "Serilog.Sinks.Console/4.1.0": {
       "sha512": "K6N5q+5fetjnJPvCmkWOpJ/V8IEIoMIB1s86OzBrbxwTyHxdx3pmz4H+8+O/Dc/ftUX12DM1aynx/dDowkwzqg==",
       "type": "package",
@@ -3558,6 +3591,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
       "Serilog >= 2.12.0",
       "Serilog.Extensions.Hosting >= 7.0.0",
+      "Serilog.Formatting.Compact >= 1.1.0",
       "Serilog.Sinks.Console >= 4.1.0",
       "Serilog.Sinks.File >= 5.0.0"
     ]
@@ -3620,6 +3654,10 @@
           "Serilog.Extensions.Hosting": {
             "target": "Package",
             "version": "[7.0.0, )"
+          },
+          "Serilog.Formatting.Compact": {
+            "target": "Package",
+            "version": "[1.1.0, )"
           },
           "Serilog.Sinks.Console": {
             "target": "Package",

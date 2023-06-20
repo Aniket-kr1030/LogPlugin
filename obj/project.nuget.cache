@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "B13rR9plG3/FEgfy3TvK/T/Jqg2W60BIlZXWFprPm1pxAmOWC1ltb+g7zJRQwY/2XfjMIKxqSOT8iWG9Hrv5TQ==",
+  "dgSpecHash": "lzzATD5FHvI5zrODklOxMwncVF0BWK1PgJSV1e3MGFlGJobM0AW/Eh1O+lvPTEV9LeE+4+VFjMl67xg01AG94Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\anike\\OneDrive\\Documents\\GitHub\\LogPlugin\\LogPlugin.csproj",
   "expectedPackageFiles": [
@@ -43,6 +43,7 @@
     "C:\\Users\\anike\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512",
     "C:\\Users\\anike\\.nuget\\packages\\serilog.extensions.hosting\\7.0.0\\serilog.extensions.hosting.7.0.0.nupkg.sha512",
     "C:\\Users\\anike\\.nuget\\packages\\serilog.extensions.logging\\7.0.0\\serilog.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\anike\\.nuget\\packages\\serilog.formatting.compact\\1.1.0\\serilog.formatting.compact.1.1.0.nupkg.sha512",
     "C:\\Users\\anike\\.nuget\\packages\\serilog.sinks.console\\4.1.0\\serilog.sinks.console.4.1.0.nupkg.sha512",
     "C:\\Users\\anike\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
     "C:\\Users\\anike\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",

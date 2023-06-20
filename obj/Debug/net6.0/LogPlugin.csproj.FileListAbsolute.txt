@@ -171,3 +171,4 @@ C:\Users\anike\OneDrive\Documents\GitHub\LogPlugin\bin\Debug\net6.0\Microsoft.Ex
 C:\Users\anike\OneDrive\Documents\GitHub\LogPlugin\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
 C:\Users\anike\OneDrive\Documents\GitHub\LogPlugin\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
 C:\Users\anike\OneDrive\Documents\GitHub\LogPlugin\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+C:\Users\anike\OneDrive\Documents\GitHub\LogPlugin\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
