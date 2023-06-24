@@ -3,6 +3,8 @@
 @using LoggerPlugin.Models
 @using Microsoft.EntityFrameworkCore
 @inject ApplicationDbContext _context
+@using System
+
 
 
 <h1>Log Viewer</h1>
@@ -140,10 +142,16 @@ else
         {
             if (string.IsNullOrEmpty(_selectedLogLevel))
             {
+                if(_context.LogEvents ==null){
+                    return;
+                }
                 _logEvents = await _context.LogEvents.OrderByDescending(x => x.Timestamp).ToListAsync();
             }
             else
             {
+                if(_context.LogEvents ==null){
+                    return;
+                }
                 _logEvents = await _context.LogEvents
                     .Where(x => x.Level == _selectedLogLevel)
                     .OrderByDescending(x => x.Timestamp)

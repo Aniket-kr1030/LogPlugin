@@ -35,6 +35,10 @@ namespace LoggerPlugin.Controllers
             try
             {
                 // Save to database
+                if(_context.LogEvents == null){
+                    return NotFound();
+                }
+
                 _context.LogEvents.Add(logEvent);
                 await _context.SaveChangesAsync();
                  if (logEvent.Level == null)
