@@ -8,9 +8,9 @@ namespace LogPlugin.Services
 
     public class CleanupService : BackgroundService
     {
-        private readonly ApplicationDbContext _context;
-        private readonly Serilog.ILogger _infoLogger;
-        private readonly Serilog.ILogger _errorLogger;
+        private readonly ApplicationDbContext? _context;
+        private readonly Serilog.ILogger? _infoLogger;
+        private readonly Serilog.ILogger? _errorLogger;
 
         public CleanupService(ApplicationDbContext context, ILogger<CleanupService> logger)
         {
@@ -24,6 +24,16 @@ namespace LogPlugin.Services
                 try
                 {
                     var cutoffDate = DateTime.UtcNow.AddDays(-30);
+
+                    if(_context == null){
+                        return ;
+                    }
+                    
+
+                    if(_context.LogEvents == null){
+                        return ;
+                    }
+
                     var oldEntries = _context.LogEvents
                         .Where(le => le.Timestamp < cutoffDate);
 
@@ -31,12 +41,20 @@ namespace LogPlugin.Services
 
                     await _context.SaveChangesAsync();
 
+                    if(_infoLogger == null){
+                        return;
+                    }
+
                     // Log the successful cleanup
                     _infoLogger.Information($"Deleted old log entries at {DateTime.UtcNow}");
                 }
                 catch (Exception ex)
                 {
                     // Log any errors during cleanup
+
+                    if(_errorLogger == null){
+                        return;
+                    }
                     _errorLogger.Error(ex, "An error occurred during cleanup");
                 }
 
