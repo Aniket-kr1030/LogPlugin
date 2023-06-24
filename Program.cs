@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using LogPlugin.Data;
 using Microsoft.EntityFrameworkCore;
 using LoggerPlugin.Middleware;
 using LoggerPlugin.Data;

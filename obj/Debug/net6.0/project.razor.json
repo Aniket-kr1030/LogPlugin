@@ -50,43 +50,6 @@
         }
       },
       {
-        "HashCode": 15156220,
-        "Kind": "Components.Component",
-        "Name": "LogPlugin.Pages.FetchData",
-        "AssemblyName": "LogPlugin",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "LogPlugin.Pages.FetchData",
-          "Common.TypeNameIdentifier": "FetchData",
-          "Common.TypeNamespace": "LogPlugin.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 398743429,
-        "Kind": "Components.Component",
-        "Name": "LogPlugin.Pages.FetchData",
-        "AssemblyName": "LogPlugin",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "LogPlugin.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "LogPlugin.Pages.FetchData",
-          "Common.TypeNameIdentifier": "FetchData",
-          "Common.TypeNamespace": "LogPlugin.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": 1362094847,
         "Kind": "Components.Component",
         "Name": "LogPlugin.Pages.Index",
@@ -18736,11 +18699,6 @@
     {
       "FilePath": "c:\\Users\\anike\\OneDrive\\Documents\\GitHub\\LogPlugin\\Pages\\Counter.razor",
       "TargetPath": "Pages\\Counter.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\anike\\OneDrive\\Documents\\GitHub\\LogPlugin\\Pages\\FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
       "FileKind": "component"
     },
     {
