@@ -11,6 +11,6 @@ namespace LoggerPlugin.Data
             Database.EnsureCreated();
         }
 
-        public DbSet<LogEvent> LogEvents { get; set; }
+        public DbSet<LogEvent>? LogEvents { get; set; }
     }
 }

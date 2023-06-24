@@ -15,14 +15,6 @@ namespace LogPlugin.Services
         public CleanupService(ApplicationDbContext context, ILogger<CleanupService> logger)
         {
             _context = context;
-
-            _infoLogger = new LoggerConfiguration()
-                .WriteTo.File("Logs/info.txt", rollingInterval: RollingInterval.Day)
-                .CreateLogger();
-
-            _errorLogger = new LoggerConfiguration()
-                .WriteTo.File("Logs/error.txt", rollingInterval: RollingInterval.Day)
-                .CreateLogger();
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
