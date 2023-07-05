@@ -1,0 +1,17 @@
+{"@t":"2023-07-02T17:19:29.7656657Z","@mt":"{Timestamp} {Level} {UserInformation} {SystemInformation} {ProcessInformation} {Message}","Timestamp":"2023-07-02T22:49:29.7582826Z","Level":"Information","UserInformation":"User 3","SystemInformation":"Test System","ProcessInformation":"Test Process","Message":"I am testing"}
+2023-07-02 22:52:14.194 +05:30 [INF] Deleted old log entries at 02-07-2023 17:22:14
+2023-07-02 22:52:14.198 +05:30 [INF] Deleted old log files at 02-07-2023 17:22:14
+2023-07-02 22:53:11.127 +05:30 [INF] Deleted old log entries at 02-07-2023 17:23:11
+2023-07-02 22:53:11.131 +05:30 [INF] Deleted old log files at 02-07-2023 17:23:11
+2023-07-02 23:00:29.217 +05:30 [INF] Deleted old log entries at 02-07-2023 17:30:29
+2023-07-02 23:00:29.222 +05:30 [INF] Deleted old log files at 02-07-2023 17:30:29
+2023-07-02 23:06:25.668 +05:30 [INF] Deleted old log entries at 02-07-2023 17:36:25
+2023-07-02 23:06:25.672 +05:30 [INF] Deleted old log files at 02-07-2023 17:36:25
+2023-07-02 23:09:52.250 +05:30 [INF] Deleted old log entries at 02-07-2023 17:39:52
+2023-07-02 23:09:52.254 +05:30 [INF] Deleted old log files at 02-07-2023 17:39:52
+2023-07-02 23:14:01.239 +05:30 [INF] Deleted old log entries at 02-07-2023 17:44:01
+2023-07-02 23:14:01.243 +05:30 [INF] Deleted old log files at 02-07-2023 17:44:01
+2023-07-02 23:14:38.508 +05:30 [INF] Deleted old log entries at 02-07-2023 17:44:38
+2023-07-02 23:14:38.514 +05:30 [INF] Deleted old log files at 02-07-2023 17:44:38
+2023-07-02 23:16:07.830 +05:30 [INF] Deleted old log entries at 02-07-2023 17:46:07
+2023-07-02 23:16:07.834 +05:30 [INF] Deleted old log files at 02-07-2023 17:46:07

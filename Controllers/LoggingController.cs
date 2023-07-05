@@ -70,5 +70,19 @@ namespace LoggerPlugin.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
+
+        [HttpGet("summary")]
+        public IActionResult GetSummary()
+        {
+            if(_context.LogEvents == null){
+                return NotFound();
+            }
+
+            var summary = _context.LogEvents
+                .GroupBy(l => l.Level)
+                .Select(g => new { LogLevel = g.Key, Count = g.Count() });
+
+            return Ok(summary);
+        }
     }
 }

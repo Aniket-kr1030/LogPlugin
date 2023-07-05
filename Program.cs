@@ -5,12 +5,9 @@ using Microsoft.EntityFrameworkCore;
 using LoggerPlugin.Middleware;
 using LoggerPlugin.Data;
 using Serilog;
-using Microsoft.Extensions.Hosting;
 using Serilog.Events;
-using Serilog.Sinks.File;
-using Serilog.Extensions.Hosting;
 using LogPlugin.Services;
-using Microsoft.Extensions.DependencyInjection;
+
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -36,7 +33,7 @@ builder.Services.AddControllers();
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 
-
+builder.Services.AddHostedService<CleanupService>(); 
 
 
 Log.Logger = new LoggerConfiguration()
@@ -58,9 +55,6 @@ var app = builder.Build();
 
 app.UseExceptionHandler("/Error");
 app.UseHsts();
-
-//Serilog
-
 
 
 
@@ -85,7 +79,7 @@ app.UseEndpoints(endpoints =>
 
 try
 {
-    Log.Information("Starting up");
+    Log.Information("Application Started on https://localhost:5001");
     app.Run();
 }
 catch (Exception ex)

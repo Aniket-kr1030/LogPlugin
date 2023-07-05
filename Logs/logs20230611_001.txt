@@ -1,2 +1,0 @@
-2023-06-11 11:33:31.821 +05:30 [INF] "2023-06-11T06:03:31.5294263Z" None User 2 Test System Test Process Test Log
-2023-06-11 11:38:00.259 +05:30 [INF] "2023-06-11T06:07:59.9588087Z" Critical User 3 Test System Test Process Test Log

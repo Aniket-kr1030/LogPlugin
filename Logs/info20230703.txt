@@ -1,0 +1,4 @@
+2023-07-03 15:55:40.179 +05:30 [INF] Deleted old log entries at 03-07-2023 10:25:40
+2023-07-03 15:55:40.187 +05:30 [INF] Deleted old log files at 03-07-2023 10:25:40
+2023-07-03 16:33:20.415 +05:30 [INF] Deleted old log entries at 03-07-2023 11:03:20
+2023-07-03 16:33:20.421 +05:30 [INF] Deleted old log files at 03-07-2023 11:03:20

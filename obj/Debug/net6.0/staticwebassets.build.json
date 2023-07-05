@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y+JmQmEQfYKPokrL6YbaAhgka7MqhIwIVQv9qCo17Vc=",
+  "Hash": "VJ7416hxN7QmOO7caMnr48QbzgFlqEBab1nOGNNiqS8=",
   "Source": "LogPlugin",
   "BasePath": "_content/LogPlugin",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\anike\\OneDrive\\Documents\\GitHub\\LogPlugin\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "LogPlugin",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\anike\\OneDrive\\Documents\\GitHub\\LogPlugin\\wwwroot\\",
+      "BasePath": "_content/LogPlugin",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\anike\\OneDrive\\Documents\\GitHub\\LogPlugin\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
@@ -185,23 +202,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
-    },
-    {
-      "Identity": "C:\\Users\\anike\\OneDrive\\Documents\\GitHub\\LogPlugin\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "LogPlugin",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\anike\\OneDrive\\Documents\\GitHub\\LogPlugin\\wwwroot\\",
-      "BasePath": "_content/LogPlugin",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\anike\\OneDrive\\Documents\\GitHub\\LogPlugin\\wwwroot\\css\\open-iconic\\ICON-LICENSE",

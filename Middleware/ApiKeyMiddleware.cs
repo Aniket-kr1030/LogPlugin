@@ -7,25 +7,24 @@ namespace LoggerPlugin.Middleware
     {
         private const string ApiKeyHeaderName = "X-API-KEY";
         private readonly RequestDelegate _next;
-        private readonly string _apiKey;
+        private readonly string? _apiKey;
 
         public ApiKeyMiddleware(RequestDelegate next, IConfiguration config)
         {
+
             _next = next;
-            _apiKey = "123456789"; // store API Key in appsettings.json or use a secure secret manager
+            _apiKey = config["Apikey"]; // store API Key in appsettings.json or use a secure secret manager
         }
 
         public async Task InvokeAsync(HttpContext context)
         {
-            if (context.Request.Path.ToString() == "/logging")
+            if (context.Request.Path.ToString() == "/Logging")
             {
-
-
                 if (!context.Request.Headers.TryGetValue(ApiKeyHeaderName, out var receivedApiKey))
                 {
                     context.Response.StatusCode = 401;
                     Console.WriteLine(context.Request.Path.ToString());
-                    await context.Response.WriteAsync("API Key was not provided. (Header name: 'X-API-KEY')");
+                    await context.Response.WriteAsync($"API Key was not provided. (Header name: 'X-API-KEY'){_apiKey}");
                 }
 
                 else if (receivedApiKey != _apiKey)

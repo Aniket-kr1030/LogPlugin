@@ -1,1 +1,0 @@
-{"@t":"2023-06-20T16:13:58.6345360Z","@mt":"{Timestamp} {Level} {UserInformation} {SystemInformation} {ProcessInformation} {Message}","@l":"Error","Timestamp":"2023-06-20T21:43:57.9363524Z","Level":"Error","UserInformation":"User 2","SystemInformation":"Test System","ProcessInformation":"Test Process","Message":"Test Log"}
